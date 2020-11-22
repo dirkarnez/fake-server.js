@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../index.js"></script>
+</head>
+<body>
+    <script>
+        //window.server.isTesting = true;
+
+        window.server
+        .createAsPromise({name: "Peter", id: 1})
+        .then(() => console.log("Success"))
+        .catch(err => console.error(err));
+
+        
+        /*
+        read(function(data) {
+            alert(JSON.stringify(data));
+        });
+
+        create({name: "Alex", id: 4}, function(isSuccess) {
+            alert(isSuccess);
+        });
+
+        read(function(data) {
+            alert(JSON.stringify(data));
+        });
+        
+        update({name: "Alexander", id: 4}, function(isSuccess) {
+            alert(isSuccess);
+        });
+
+        read(function(data) {
+            alert(JSON.stringify(data));
+        });
+
+        delette(4, function(isSuccess) {
+            alert(isSuccess);
+        });
+        
+        read(function(data) {
+            alert(JSON.stringify(data));
+        });
+        */
+    </script>
+</body>
+</html>
